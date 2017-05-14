@@ -1,5 +1,5 @@
 // make Array of Word Options (all lowercase)
-var wordsList = ['ironman', 'hulk', 'thor', 'blackwidow', 'falcon', 'antman', 'wolverine', 'cyclops', 'gambit', 'iceman', 'spiderman'];
+var wordsList = ['ironman', 'hulk', 'thor', 'blackwidow', 'falcon', 'antman', 'wolverine', 'cyclops', 'gambit', 'iceman', 'spiderman', 'storm', 'nightcrawler'];
 var win = 0;
 var loss = 0;
 var letterGuessed;
@@ -91,9 +91,9 @@ function checkLetters(letter) {
   else {
     wrong.push(letterGuessed);
 
-    document.querySelector("#wrong-guesses").innerHTML = 'incorrect guesses: ' + wrong;
+    document.querySelector("#wrong-guesses").innerHTML = wrong;
     numberOfGuesses --;
-    document.querySelector("#guesses-left").innerHTML = 'guesses remaining: ' + numberOfGuesses;
+    document.querySelector("#guesses-left").innerHTML = numberOfGuesses;
   }
 
 }
